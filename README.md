@@ -14,7 +14,7 @@
   <p align="center">
    <a href="https://github.com/anuraghazra/github-readme-stats">
    <img align="center"
-        src="https://github-readme-stats.vercel.app/api/pin/?username=atharv115&repo=MAHSS-CPP&show_owner=true&theme=jolly&icon_color=68f8f1&hide_border=true&border_radius=25&title_color=ffffff&text_color=a100ff&&bg_color=DEG,162b41,240062,4a00c9,4a00c9,84f1d0"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=atharv115&repo=MAHSS-CPP&show_owner=true&theme=jolly&icon_color=68f8f1&hide_border=true&border_radius=25&title_color=ffffff&text_color=a100ff&&bg_color=DEG,162b41,240062"
         alt="atharv115" /></a> 
   </p>
 </p> 
