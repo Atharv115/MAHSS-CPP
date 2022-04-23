@@ -1,9 +1,8 @@
 <p align="center">
   <a href="https://codesandbox.io">
-    <img src="https://codesandbox.io/static/img/banner.png?v=2" height="300px">
+    <img src="https://user-images.githubusercontent.com/86460457/164887829-587e994e-08f1-40b1-99fd-97975aec7e34.png">
   </a>
 </p>
-
 &nbsp;
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-153-orange.svg?style=flat-square)](#contributors-)
