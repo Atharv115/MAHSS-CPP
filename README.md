@@ -23,7 +23,7 @@
 ---
 
 
->>"Succes has nothing to do with what you gain in life or accomplishfor yourself. It's what you do for others"
+>>"Succes has nothing to do with what you gain in life or accomplish for yourself. It's what you do for others"
 >>                                       -Danny Thomas 
 ***
 **If you have python installed on your computer you can try this for fun**
