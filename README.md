@@ -7,7 +7,8 @@
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/atharv115/MAHSS-CPP?logo=GitHub&style=plastic">
   <img alt="GitHub" src="https://img.shields.io/github/license/Atharv115/MAHSS-CPP?logo=GIthub&style=plastic">
-  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Atharv115/MAHSS-CPP?color=green&label=Repo%20Contributers&logo=Github&style=plastic">      
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Atharv115/MAHSS-CPP?color=green&label=Repo%20Contributers&logo=Github&style=plastic">
+  <img src="https://badges.pufler.dev/visits/atharv115/MAHSS-CPP?logo=GitHub&style=plastic">
 </p> 
 <h3 align="center">
     An instantly ready, full-featured Repository you will need for the reference of <strong>C++</strong> Programs
