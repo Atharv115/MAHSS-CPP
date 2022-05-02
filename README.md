@@ -1,8 +1,9 @@
 <p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width = "150">
-    <a href="https://git.io/typing-svg">
+    <h2 align="center">
+             <a href="https://git.io/typing-svg">
         <img
-            src="https://readme-typing-svg.herokuapp.com?font=Cascadia+mono&size=30&duration=3000&color=659AD2&center=true&vCenter=true&lines=Mushtifund+Aryaan+-+CS" /></a>
+            src="https://readme-typing-svg.herokuapp.com?font=Cascadia+mono&size=30&duration=3000&color=659AD2&center=true&vCenter=true&lines=Mushtifund+Aryaan+-+CS" /></a></h2>
 </p>
 &nbsp;
 
