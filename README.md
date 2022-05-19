@@ -20,9 +20,9 @@
 
 <p align="center">
 <img align="left"
-        src="https://github.com/Atharv115/Atharv115/blob/Assets/illustration.svg" width="400"/>
+        src="https://github.com/Atharv115/Atharv115/blob/Assets/illustration.svg" width="380"/>
 <img align="right"
-        src="https://github.com/Atharv115/Atharv115/blob/Assets/Pull%20request-amico.svg" width="400"/>
+        src="https://github.com/Atharv115/Atharv115/blob/Assets/Pull%20request-amico.svg" width="380"/>
 </p>
 <p align="center">
     <img
