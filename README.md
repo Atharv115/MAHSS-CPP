@@ -24,6 +24,7 @@
 <img align="right"
         src="https://github.com/Atharv115/Atharv115/blob/Assets/Pull%20request-amico.svg" width="380"/>
 </p>
+
 <p align="center">
     <img
         src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=130&section=footer&animation=twinkling" />
