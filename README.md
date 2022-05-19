@@ -1,9 +1,9 @@
 <p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" width = "150">
-    <h2 align="center">
+    <p align="center">
              <a href="https://git.io/typing-svg">
         <img
-            src="https://readme-typing-svg.herokuapp.com?font=Cascadia+mono&size=30&duration=3000&color=659AD2&center=true&vCenter=true&lines=Mushtifund+Aryaan+-+CS" /></a></h2>
+            src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=35&duration=3000&color=659AD2&center=true&vCenter=true&lines=Mushtifund+Aryaan+-+CS&width=600" /></a></p>
 </p>
 &nbsp;
 
@@ -14,38 +14,17 @@
   <img src="https://badges.pufler.dev/visits/atharv115/MAHSS-CPP?logo=GitHub&style=plastic&color=cyan">
   <img src="https://badges.pufler.dev/updated/atharv115/MAHSS-CPP?logo=GitHub&style=plastic&color=red">
 </p> 
-<h3 align="center">
+<h4 align="center">
     An instantly ready, full-featured Repository you will need for the reference of <strong>C++</strong> Programs
-</h3>
-<!--<p align="center">
-   <a href="https://github.com/anuraghazra/github-readme-stats">
-   <img align="center" height="180em"
-        src="https://github-readme-stats.vercel.app/api/pin/?username=atharv115&repo=MAHSS-CPP&show_owner=true&theme=jolly&icon_color=68f8f1&hide_border=true&border_radius=25&title_color=68f8f1&text_color=ffffff&&bg_color=DEG,162b41,240062"
-        alt="atharv115" /></a> 
+</h4>
+
+<p align="center">
+<img align="left"
+        src="https://github.com/Atharv115/Atharv115/blob/Assets/illustration.svg" width="400"/>
+<img align="right"
+        src="https://github.com/Atharv115/Atharv115/blob/Assets/Pull%20request-amico.svg" width="400"/>
 </p>
--->
-
----
-
-
->>"Succes has nothing to do with what you gain in life or accomplish for yourself. It's what you do for others"
->>                                       -Danny Thomas 
-***
-**If you have python installed on your computer you can try this for fun**
- ``` python
-import pyautogui as spam
-import time
-
-limit = input("Enter no. of messages : ")
-msg = input("Message you want to send ; ")
-
-i = 0
-
-time.sleep(2)
-
-while i < int(limit):
-    spam.typewrite(msg)
-    spam.press('Enter')
-
-    i += 1
-```
+<p align="center">
+    <img
+        src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=130&section=footer&animation=twinkling" />
+</p>
