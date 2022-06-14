@@ -14,12 +14,3 @@
 <h3 align="center">
     Repo for all <strong>C++</strong> programs taught in school & Sorted in Folders for better productivity
 </h3>
-
-<p align="center">
-<img align="left"
-        src="https://github.com/Atharv115/Atharv115/blob/Assets/illustration.svg" width="380"/>
-<img align="right"
-        src="https://github.com/Atharv115/Atharv115/blob/Assets/Pull%20request-amico.svg" width="380"/>
- <img
-      src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=130&section=footer&animation=twinkling" />
-</p>
