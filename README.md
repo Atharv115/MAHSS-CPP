@@ -29,6 +29,6 @@
 
 | | | | | | |
 | :--: | :--: | :--: | :--: | :--: | :--: |
-|[**Palindrome**](https://github.com/Atharv115/MAHSS-CPP/blob/main/We/Palindrome.cpp)| [**Fibonacci Series**](https://github.com/Atharv115/MAHSS-CPP/blob/main/We/Fibonacci_Series.cpp)|
+|[**Palindrome**](https://github.com/Atharv115/MAHSS-CPP/blob/main/We/Palindrome.cpp)|[**Fibonacci Series**](https://github.com/Atharv115/MAHSS-CPP/blob/main/We/Fibonacci_Series.cpp)|
 
 </div>
