@@ -21,8 +21,8 @@
 
 </div>
 
-[**Palindrome**]:(https://github.com/Atharv115/MAHSS-CPP/blob/main/Palindrome.cpp)
-[**Fibonacci**]:(https://github.com/Atharv115/MAHSS-CPP/blob/main/Fibonacci_Series.cpp) 
-[**Palindrome Function**]:(https://github.com/Atharv115/MAHSS-CPP/blob/main/palindrom_using_Functions.cpp)
-[**Fibonacci Function**]:(https://github.com/Atharv115/MAHSS-CPP/blob/main/Fibonacci_using_Functions.cpp) 
-[**Palindrome_Class**]:(https://github.com/Atharv115/MAHSS-CPP/blob/main/Palindrome_Class.cpp)
+[**Palindrome**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Palindrome.cpp 
+[**Fibonacci**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Fibonacci_Series.cpp 
+[**Palindrome Function**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/palindrom_using_Functions.cpp
+[**Fibonacci Function**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Fibonacci_using_Functions.cpp 
+[**Palindrome_Class**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Palindrome_Class.cpp
