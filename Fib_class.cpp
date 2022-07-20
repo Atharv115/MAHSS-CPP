@@ -5,29 +5,30 @@ using namespace std;
 
 class FIIBO
 {
-    int N;
-    void input();
+    unsigned short int N;
+    int input();
 
 public:
     void display();
 };
-void FIIBO::input()
+int FIIBO::input()
 {
-    int n, i, a = 0, b = 1, c;
     cout << "Enter the value of n : ";
-    cin >> n;
+    cin >> N;
+    return N;
+}
+void FIIBO::display()
+{
+    input();
+    int i, a = 0, b = 1, c;
     cout << "The Fibonacci Series is : 0,1";
-    for (i = 0; i < n - 2; i++)
+    for (i = 0; i < N - 2; i++)
     {
         c = a + b;
         cout << "," << c;
         a = b;
         b = c;
     }
-}
-void FIIBO::display()
-{
-    return input();
 }
 int main()
 {
