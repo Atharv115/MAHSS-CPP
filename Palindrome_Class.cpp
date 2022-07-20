@@ -22,7 +22,7 @@ public:
 // 2 Functions used here input(private), display(public)
 int NUMBER::input()
 {
-    int temp, r, num;
+    int temp, r = 0, num;
     cout << "jay to Number Ghal : ";
     cin >> num;
     temp = num;
@@ -36,19 +36,17 @@ int NUMBER::input()
     else
         return 0;
 }
+// Using Ternary operator cout << (input()==1 ? "yes": "no")
 string NUMBER::display() // Function to Display output
 {
-    if (input() != 1)
-    {
+    if (input() == 1)
         return "\nPalindrome\n";
-    }
     else
-    {
         return "\nNot a Palindrome\n";
-    }
 }
 int main()
 {
     NUMBER n;
     cout << n.display();
+    return 0;
 }
