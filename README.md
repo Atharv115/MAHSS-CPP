@@ -17,7 +17,7 @@
 | | | | | | 
 | :-: | :-: | :-: | :-: | :-: |
 |1.|[**Palindrome**]|[**Fibonacci**]|[**Palindrome Function**]|[**Fibonacci Function**]|
-|2.|[**Palindrome_Class**]| [**Fibonacci Class**] |
+|2.|[**Palindrome_Class**]|[**Fibonacci Class**]|[**Prime & Composite**]|
 
 </div>
 
@@ -27,3 +27,4 @@
 [**Fibonacci Function**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Fibonacci_using_Functions.cpp 
 [**Palindrome_Class**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Palindrome_Class.cpp
 [**Fibonacci Class**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Fib_class.cpp
+[**Prime & Composite**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Prime_Composite_class.cpp
