@@ -14,8 +14,8 @@
 
 <div align="center">
 
-|       |                        |                       |                           |                          |
-| :---: | :--------------------: | :-------------------: | :-----------------------: | :----------------------: |
+| | | | | |
+| :-: | :-: | :-: | :-: | :-: |
 |  1.   |    [**Palindrome**]    |    [**Fibonacci**]    | [**Palindrome Function**] | [**Fibonacci Function**] |
 |  2.   | [**Palindrome_Class**] | [**Fibonacci Class**] |  [**Prime & Composite**]  |
 
