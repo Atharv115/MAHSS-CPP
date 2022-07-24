@@ -28,3 +28,6 @@
 [**Palindrome_Class**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Palindrome_Class.cpp
 [**Fibonacci Class**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Fib_class.cpp
 [**Prime & Composite**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Prime_Composite_class.cpp
+
+also included
+* [**Structure of URL**](https://github.com/Atharv115/MAHSS-CPP/blob/main/Structure%20of%20URL.jpg)
