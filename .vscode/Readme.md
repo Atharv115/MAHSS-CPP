@@ -1,3 +1,9 @@
+# Debugging in VSC for Cpp
+
+[**This Blog has made me go through the Debugging process in VSC quite Easily**](https://gourav.io/blog/setup-vscode-to-run-debug-c-cpp-code#create-a-sample-cc-project)
+
+<kbd> Please Follow Step-by-Step it will surely be helpfull</kbd>
+
 ``launch.json``
 ```json
 {
