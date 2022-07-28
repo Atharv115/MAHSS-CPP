@@ -1,6 +1,4 @@
 *.exe
-/.vscode
-/.vs 
 # Prerequisites
 *.d
 
