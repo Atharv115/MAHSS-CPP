@@ -9,9 +9,6 @@ int main()
     cin >> n;
     cout << "Enter r : ";
     cin >> r;
-    cout << fact(n) << endl;
-    cout << fact(r) << endl;
-    cout << fact(n - r) << endl;
     cout << "The Permutation is : " << fact(n) / (fact(r) * r * fact(n - r));
     // int nfact=1, rfact=1, nrfact=1;
     // for (i = n; i > 1; i--)
