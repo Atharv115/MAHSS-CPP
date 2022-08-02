@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++ build & Debug",
+            "name": "Debug",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -23,7 +23,7 @@
             "preLaunchTask": "g++.exe build active file"
         },
         {
-            "name": "g++ build & Run",
+            "name": "Run",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
