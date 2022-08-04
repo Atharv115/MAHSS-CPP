@@ -34,3 +34,4 @@ also included
   
 Some useful videos
 * [**Pass by Value | Pass by Reference | Pass by Address**](https://youtu.be/-NS3KfrSvU8)
+* [**Pointers**](https://www.youtube.com/watch?v=fBlM7pR2r_Q)
