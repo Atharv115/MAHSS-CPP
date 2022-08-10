@@ -18,7 +18,7 @@
 | :-: | :-: | :-: | :-: | :-: |
 |  1.   |    [**Palindrome**]    |    [**Fibonacci**]    | [**Palindrome Function**] | [**Fibonacci Function**] |
 |  2.   | [**Palindrome_Class**] | [**Fibonacci Class**] |  [**Prime & Composite**]  | [**Union & Intersection**] |
-|  3.   |
+|  3.   | [**Reversing NO.**]    | [**Student class**]
 
 </div>
 
@@ -30,6 +30,8 @@
 [**Fibonacci Class**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Fib_class.cpp
 [**Prime & Composite**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/Prime_Composite_class.cpp
 [**Union & Intersection**]: https://github.com/Atharv115/MAHSS-CPP/blob/main/array_union_intersect.cpp
+[**Reversing NO.**]:https://github.com/Atharv115/MAHSS-CPP/blob/main/rev_integer.cpp
+[**Student class**]:https://github.com/Atharv115/MAHSS-CPP/blob/main/Student_class.cpp
 
 also included
 * [**Structure of URL**](https://github.com/Atharv115/MAHSS-CPP/blob/main/Structure%20of%20URL.jpg)
