@@ -19,7 +19,8 @@
 |  1.   |    [**Palindrome**]    |    [**Fibonacci**]    | [**Palindrome Function**] | [**Fibonacci Function**] |
 |  2.   | [**Palindrome_Class**] | [**Fibonacci Class**] |  [**Prime & Composite**]  | [**Union & Intersection**] |
 |  3.   | [**Reversing NO.**]    | [**Student class**]   | [**Books**] | [**HW class item**] |
-|  4.   | [**Sin(x)**] | [**Marks & %age**] | [**Distance**] |
+|  4.   | [**Sin(x)**] | [**Marks & %age**] | [**Distance**] | [**Employee**] |
+|  5.   | [**diff  types Construcors**] | [**Travel Agency**] |
 
 </div>
 
@@ -38,6 +39,9 @@
 [**Sin(x)**]:https://github.com/Atharv115/MAHSS-CPP/blob/main/sinx_tr.cpp
 [**Marks & %age**]:https://github.com/Atharv115/MAHSS-CPP/blob/main/marks_and_percent.cpp
 [**Distance**]:https://github.com/Atharv115/MAHSS-CPP/blob/main/distance.cpp
+[**Employee**]:https://github.com/Atharv115/MAHSS-CPP/blob/main/employee.cpp
+[**diff  types Construcors**]:https://github.com/Atharv115/MAHSS-CPP/blob/main/Employee_pro_max.cpp
+[**Travel Agency**]:https://github.com/Atharv115/MAHSS-CPP/blob/main/Aryaans_travelagency.cpp
 
 also included
 * [**Structure of URL**](https://github.com/Atharv115/MAHSS-CPP/blob/main/Structure%20of%20URL.jpg)
