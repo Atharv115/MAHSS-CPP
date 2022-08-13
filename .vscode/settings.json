@@ -1,3 +1,6 @@
 {
-    "files.defaultLanguage": "cpp"
+    "files.defaultLanguage": "cpp",
+    "files.associations": {
+        "typeinfo": "cpp"
+    }
 }
