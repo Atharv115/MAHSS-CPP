@@ -13,14 +13,14 @@ void reverse::input()
 {
     cout << "Enter the number: ";
     cin >> m;
+}
+void reverse::display()
+{
     while (m != 0)
     {
         rev = rev * 10 + (m % 10);
         m = m / 10;
     }
-}
-void reverse::display()
-{
     cout << "The reverse of " << m << " is " << rev;
 }
 int main()
