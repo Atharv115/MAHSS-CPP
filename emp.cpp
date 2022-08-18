@@ -23,7 +23,7 @@ void employee::inputdata()
 }
 void employee::display()
 {
-    cout << "........................";
+    cout << "........................" << endl;
     cout << "Your Employee code is " << emp_code << ", NAME is " << emp_name << ", Designation: " << des;
 }
 
