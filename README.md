@@ -49,6 +49,7 @@ also included
 Some useful videos
 * [**Pass by Value | Pass by Reference | Pass by Address**](https://youtu.be/-NS3KfrSvU8)
 * [**Pointers**](https://www.youtube.com/watch?v=fBlM7pR2r_Q)
+* [**Copy Constructor**](https://www.youtube.com/watch?v=Nc60Ueb7bY8)
 
 VS Code Setup **Guide/Tutorial**<br>
 - [x] This [blog](https://gourav.io/blog/setup-vscode-to-run-debug-c-cpp-code) has all the required material for setting VSC for **C++ Development**
