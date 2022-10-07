@@ -1,0 +1,144 @@
+{
+    "editor.wordWrap": "on",
+    "terminal.integrated.fontFamily": " MesloLGL Nerd Font Mono, Consolas, 'Courier New',monospace",
+    "editor.fontSize": 17,
+    "scm.inputFontSize": 12,
+    "settingsSync.ignoredSettings": [
+        "editor.formatOnSaveMode"
+    ],
+    "files.autoSave": "onFocusChange",
+    "editor.cursorBlinking": "expand",
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} Atharv Golam",
+    "editor.smoothScrolling": true,
+    "cmake.configureOnOpen": true,
+    "window.newWindowDimensions": "maximized",
+    "window.openFoldersInNewWindow": "on",
+    "screencastMode.fontSize": 30,
+    "explorer.confirmDragAndDrop": false,
+    "editor.fontFamily": "'Cascadia code',Consolas, 'Courier New', monospace",
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "tabnine.experimentalAutoImports": true,
+    "editor.mouseWheelZoom": true,
+    "screencastMode.mouseIndicatorSize": 24,
+    "screencastMode.verticalOffset": 13,
+    "screencastMode.keyboardOverlayTimeout": 600,
+    "window.restoreFullscreen": true,
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "none",
+    "http.proxySupport": "off",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorWidth": 3,
+    "codesnap.containerPadding": "2em",
+    "codesnap.backgroundColor": "",
+    "editor.formatOnPaste": true,
+    "diffEditor.codeLens": true,
+    "editor.formatOnType": true,
+    "workbench.editor.wrapTabs": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "workbench.editor.historyBasedLanguageDetection": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.defaultDateLocale": null,
+    "workbench.iconTheme": "material-icon-theme",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "git.autofetch": true,
+    "markdown.preview.fontSize": 16,
+    "terminal.integrated.fontWeight": "normal",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": false,
+    "editor.guides.bracketPairsHorizontal": true,
+    "git.enableSmartCommit": true,
+    "codesnap.boxShadow": "",
+    "terminal.integrated.enableBell": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.temporaryFileName": "tempfile",
+    "git.confirmSync": false,
+    "editor.fontLigatures": true,
+    "synthwave84.brightness": 0.80,
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "explorer.confirmDelete": false,
+    "editor.formatOnSave": true,
+    "workbench.layoutControl.enabled": false,
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "terminal.integrated.bellDuration": 2000,
+    "GitLive.Issue tracker integration": "Disabled",
+    "colorize.languages": [
+        "javascript",
+        "Markdown",
+        "JSON",
+        "CSS",
+        "C++",
+        "Powershell"
+        // ...
+    ],
+    "editor.minimap.enabled": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.codeLensFontSize": 18,
+    "window.autoDetectHighContrast": false,
+    "window.dialogStyle": "custom",
+    "update.enableWindowsBackgroundUpdates": false,
+    "explorer.fileNesting.enabled": true,
+    "audioCues.lineHasError": "on",
+    "audioCues.lineHasInlineSuggestion": "on",
+    "audioCues.lineHasWarning": "on",
+    "audioCues.volume": 100,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        }
+    },
+    "terminal.integrated.cursorStyle": "underline",
+    "C_Cpp.default.cppStandard": "c++17",
+    "files.exclude": {
+        "*.exe": true
+    },
+    "terminal.integrated.fontSize": 21,
+    "editor.guides.indentation": false,
+    "code-runner.showExecutionMessage": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "blockman.n01LineHeight": 0,
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#1073cf2d",
+        "editor.lineHighlightBorder": "#9fced11f"
+    },
+    "diffEditor.wordWrap": "off",
+    "editor.inlayHints.enabled": "on",
+    "debug.terminal.clearBeforeReusing": true,
+    "workbench.editor.enablePreview": false,
+    "editor.stickyScroll.enabled": true,
+    "terminal.integrated.smoothScrolling": true,
+    "audioCues.onDebugBreak": "on",
+    "audioCues.lineHasBreakpoint": "on",
+    "audioCues.terminalQuickFix": "on",
+    "markdown.validate.enabled": true,
+}
