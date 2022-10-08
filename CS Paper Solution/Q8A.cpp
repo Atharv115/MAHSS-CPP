@@ -1,3 +1,15 @@
+
+/*
+Define a class wall having the following members:
+Private data members:
+    -lenth float
+    -height float
+public member functions:
+    -paramatrizer constructor to initialize length and height passed as arguments to this function.
+    -a copy constructor to copy values of length and height of one object to another object of the same class.
+    -a function calculatearea() that returns the area of the wall calculated as length*height.
+Define a main function to accept length and height from the user and pass it to the appropriate functions.
+*/
 #include <iostream>
 using namespace std;
 
