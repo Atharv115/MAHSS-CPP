@@ -141,4 +141,7 @@
     "audioCues.lineHasBreakpoint": "on",
     "audioCues.terminalQuickFix": "on",
     "markdown.validate.enabled": true,
+    "files.associations": {
+        "ostream": "cpp"
+    },
 }
