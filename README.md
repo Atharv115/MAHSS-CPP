@@ -6,6 +6,8 @@
             src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=30&duration=3000&color=659AD2&center=true&vCenter=true&lines=Mushtifund+Aryaan+-+CS&width=600" /></a></p>
 </p>
 
+<p align="center" href="https://wakatime.com/badge/user/bd7229f6-884b-40b0-8232-704fda147db1/project/729e9a35-42cc-4ac5-9bbf-8430c571751a"><img src="https://wakatime.com/badge/user/bd7229f6-884b-40b0-8232-704fda147db1/project/729e9a35-42cc-4ac5-9bbf-8430c571751a.svg" alt="walkaatime"></p>
+
 <h4 align="center">
     Repo for all <strong>C++</strong> programs taught in school & Sorted in Folders for better productivity
 </h3>
