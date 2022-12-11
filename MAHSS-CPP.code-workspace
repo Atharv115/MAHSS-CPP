@@ -1,0 +1,74 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.fontFamily": "",
+		"files.autoSave": "onFocusChange",
+		"window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} Atharv Golam",
+		"screencastMode.fontSize": 30,
+		"explorer.confirmDragAndDrop": false,
+		"screencastMode.mouseIndicatorSize": 24,
+		"screencastMode.verticalOffset": 13,
+		"screencastMode.keyboardOverlayTimeout": 600,
+		"workbench.colorTheme": "Aura Dark",
+		"terminal.integrated.cursorBlinking": true,
+		"terminal.integrated.cursorWidth": 3,
+		"workbench.editor.wrapTabs": true,
+		"workbench.editor.historyBasedLanguageDetection": true,
+		"gitlens.hovers.currentLine.over": "line",
+		"gitlens.defaultDateLocale": null,
+		"workbench.iconTheme": "material-icon-theme",
+		"terminal.integrated.fontWeight": "normal",
+		"terminal.integrated.enableBell": true,
+		"git.confirmSync": false,
+		"synthwave84.brightness": 0.8,
+		"explorer.confirmDelete": false,
+		"workbench.layoutControl.enabled": false,
+		"terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+		"terminal.integrated.bellDuration": 2000,
+		"audioCues.lineHasError": "on",
+		"audioCues.lineHasInlineSuggestion": "on",
+		"audioCues.lineHasWarning": "on",
+		"audioCues.volume": 100,
+		"terminal.integrated.profiles.windows": {
+			"PowerShell": {
+				"source": "PowerShell",
+				"icon": "terminal-powershell"
+			},
+			"Command Prompt": {
+				"path": [
+					"${env:windir}\\Sysnative\\cmd.exe",
+					"${env:windir}\\System32\\cmd.exe"
+				],
+				"args": [],
+				"icon": "terminal-cmd"
+			},
+			"Git Bash": {
+				"source": "Git Bash"
+			},
+			"Windows PowerShell": {
+				"path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+			}
+		},
+		"terminal.integrated.cursorStyle": "underline",
+		"terminal.integrated.fontSize": 21,
+		"blockman.n01LineHeight": 0,
+		"workbench.colorCustomizations": {
+			"editor.lineHighlightBackground": "#1073cf2d",
+			"editor.lineHighlightBorder": "#9fced11f"
+		},
+		"debug.terminal.clearBeforeReusing": true,
+		"workbench.editor.enablePreview": false,
+		"terminal.integrated.smoothScrolling": true,
+		"audioCues.onDebugBreak": "on",
+		"audioCues.lineHasBreakpoint": "on",
+		"audioCues.terminalQuickFix": "on",
+		"files.associations": {
+			"ostream": "cpp",
+			"iostream": "cpp"
+		}
+	}
+}

@@ -144,4 +144,5 @@
     "files.associations": {
         "ostream": "cpp"
     },
+    "C_Cpp.errorSquiggles": "enabled",
 }
