@@ -69,6 +69,18 @@
 		"files.associations": {
 			"ostream": "cpp",
 			"iostream": "cpp"
-		}
+		},
+		"[cpp]": {
+			//"editor.defaultFormatter": "ms-vscode.cpptools"
+			"editor.defaultFormatter": "xaver.clang-format"
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+	},
+	"extensions": {
+		"recommendations": [
+			"xaver.clang-format",
+			"ms-vscode.cpptools",
+			"formulahendry.code-runner"
+		]
 	}
 }
