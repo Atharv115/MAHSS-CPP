@@ -68,7 +68,7 @@
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "editor.defaultFormatter": "xaver.clang-format"
     },
     "explorer.confirmDelete": false,
     "editor.formatOnSave": true,
