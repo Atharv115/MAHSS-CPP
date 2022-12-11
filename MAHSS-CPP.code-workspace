@@ -18,17 +18,14 @@
 		"terminal.integrated.cursorWidth": 3,
 		"workbench.editor.wrapTabs": true,
 		"workbench.editor.historyBasedLanguageDetection": true,
-		"gitlens.hovers.currentLine.over": "line",
-		"gitlens.defaultDateLocale": null,
 		"workbench.iconTheme": "material-icon-theme",
 		"terminal.integrated.fontWeight": "normal",
 		"terminal.integrated.enableBell": true,
 		"git.confirmSync": false,
-		"synthwave84.brightness": 0.8,
 		"explorer.confirmDelete": false,
 		"workbench.layoutControl.enabled": false,
-		"terminal.integrated.defaultProfile.windows": "Windows PowerShell",
-		"terminal.integrated.bellDuration": 2000,
+		"terminal.integrated.defaultProfile.windows": "PowerShell",
+		"terminal.integrated.bellDuration": 5000,
 		"audioCues.lineHasError": "on",
 		"audioCues.lineHasInlineSuggestion": "on",
 		"audioCues.lineHasWarning": "on",
@@ -71,16 +68,17 @@
 			"iostream": "cpp"
 		},
 		"[cpp]": {
-			//"editor.defaultFormatter": "ms-vscode.cpptools"
 			"editor.defaultFormatter": "xaver.clang-format"
 		},
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
 	},
 	"extensions": {
 		"recommendations": [
 			"xaver.clang-format",
 			"ms-vscode.cpptools",
-			"formulahendry.code-runner"
+			"formulahendry.code-runner",
+			"adpyke.codesnap",
+			"wakatime.vscode-wakatime",
+			"daltonmenezes.aura-theme"
 		]
 	}
 }

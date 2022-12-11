@@ -2,6 +2,9 @@
     "recommendations": [
         "xaver.clang-format",
         "ms-vscode.cpptools",
-        "formulahendry.code-runner"
+        "formulahendry.code-runner",
+        "adpyke.codesnap",
+        "wakatime.vscode-wakatime",
+        "daltonmenezes.aura-theme"
     ]
 }
