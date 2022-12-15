@@ -21,7 +21,6 @@
     "[c]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
     },
-    "tabnine.experimentalAutoImports": true,
     "editor.mouseWheelZoom": true,
     "screencastMode.mouseIndicatorSize": 24,
     "screencastMode.verticalOffset": 13,
@@ -29,10 +28,6 @@
     "window.restoreFullscreen": true,
     "workbench.colorTheme": "Monokai",
     "workbench.startupEditor": "none",
-    "http.proxySupport": "off",
-    "bracket-pair-colorizer-2.depreciation-notice": false,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorWidth": 3,
     "codesnap.containerPadding": "2em",
     "codesnap.backgroundColor": "",
     "editor.formatOnPaste": true,
@@ -59,7 +54,7 @@
     "git.enableSmartCommit": true,
     "codesnap.boxShadow": "",
     "terminal.integrated.enableBell": true,
-    "code-runner.runInTerminal": true,
+    "code-runner.runInTerminal": false,
     "code-runner.temporaryFileName": "tempfile",
     "git.confirmSync": false,
     "editor.fontLigatures": true,

@@ -51,7 +51,7 @@
 			}
 		},
 		"terminal.integrated.cursorStyle": "underline",
-		"terminal.integrated.fontSize": 21,
+		"terminal.integrated.fontSize": 18,
 		"blockman.n01LineHeight": 0,
 		"workbench.colorCustomizations": {
 			"editor.lineHighlightBackground": "#1073cf2d",
