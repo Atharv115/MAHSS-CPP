@@ -54,7 +54,7 @@
     "git.enableSmartCommit": true,
     "codesnap.boxShadow": "",
     "terminal.integrated.enableBell": true,
-    "code-runner.runInTerminal": false,
+    "code-runner.runInTerminal": true,
     "code-runner.temporaryFileName": "tempfile",
     "git.confirmSync": false,
     "editor.fontLigatures": true,

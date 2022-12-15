@@ -70,6 +70,7 @@
 		"[cpp]": {
 			"editor.defaultFormatter": "xaver.clang-format"
 		},
+		"code-runner.runInTerminal": true,
 	},
 	"extensions": {
 		"recommendations": [
