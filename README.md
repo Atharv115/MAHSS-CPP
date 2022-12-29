@@ -8,6 +8,11 @@
 
 <p align="center" href="https://wakatime.com/badge/user/bd7229f6-884b-40b0-8232-704fda147db1/project/729e9a35-42cc-4ac5-9bbf-8430c571751a"><img src="https://wakatime.com/badge/user/bd7229f6-884b-40b0-8232-704fda147db1/project/729e9a35-42cc-4ac5-9bbf-8430c571751a.svg" alt="walkaatime"></p>
 
+<h1 align = "center">
+    <a href = "https://github.com/Atharv115/MAHSS-CPP/tree/main/Finals">🎉⚠️Finals Docs available⚠️🎉
+    </a>
+</h1>
+
 <h4 align="center">
     Repo for all <strong>C++</strong> programs taught in school & Sorted in Folders for better productivity
 </h3>
@@ -49,6 +54,8 @@ also included
 * [**Structure of URL**](https://github.com/Atharv115/MAHSS-CPP/blob/main/Structure%20of%20URL.jpg)
 * [**CS Paper Solution FA1 Q8A & Q8B**](https://github.com/Atharv115/MAHSS-CPP/tree/main/CS%20Paper%20Solution)
   
+
+
 Some useful videos
 * [**Pass by Value | Pass by Reference | Pass by Address**](https://youtu.be/-NS3KfrSvU8)
 * [**Pointers**](https://www.youtube.com/watch?v=fBlM7pR2r_Q)
