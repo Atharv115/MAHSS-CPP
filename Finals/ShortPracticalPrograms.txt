@@ -1,0 +1,500 @@
+//Write a C++ program to reverse a given positive integer M, of arbitrary 
+//length and output M as well as its reverse
+
+#include<iostream>
+using namespace std;
+class reverse {
+	int M;
+	public:
+		void input();
+		void output();
+};
+
+void reverse::input() {
+	cout<<"Enter the number: ";
+	cin>>M;
+}
+void reverse::output() {
+	int r=0,d,n;
+	n=M;
+	while(n>0) {
+		d = n%10;
+		r = r*10+d;
+		n=n/10;
+	}
+	cout<<"The reverse of "<<M<<" is "<<r;
+}
+int main() {
+	reverse a;
+	a.input();
+	a.output();
+}
+
+
+//Write a C++ program to calculate sin(x) by summing the
+//terms of the sine series given. N is the number of terms
+//to be summed and x is a real number specifying an angle in
+//radians. Also check the result of your calculations with
+//that of the library function sin()
+//sin(x) = x - x^3/3! + x^5/5! - x^7/7!
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+class sin1
+{
+	int n;
+	float x;
+	
+	public:
+			void sine();
+};
+
+void sin1::sine()
+{
+	int i,d,j,f = 1;
+	float sum = 0;
+	
+	cout<<"Enter the angle in degrees: ";
+	cin>>d;
+	cout<<"Enter the number of terms: ";
+	cin>>n;
+	
+	x = d * 3.14 / 180;
+	
+	for(i = 1; i <= n; i++)
+	{
+		for(j = 1; j < 2 * i; j++)
+		{
+			f = f * j;
+		}
+		if(i % 2 == 0)
+		{
+			sum -= pow(x, 2 * i - 1) / f;
+		}
+		else
+		{
+			sum += pow(x, 2 * i - 1) / f;
+		}
+		f = 1;
+	}
+		cout<<"The value of the sin series for sin("<<d<<") is "<<sum<<"\nThe value according to the library function is "<<sin(x);
+}
+
+int main()
+{
+	sin1 o;
+	o.sine();
+}
+
+
+
+//Write a C++ program to generate the first N terms(N>=1) of the Fibonacci series.
+//0 1 1 2 3 
+
+#include<iostream>
+using namespace std;
+class fibonacci {
+	private:
+		int n;
+	public:
+		void input();
+		void output();
+};
+
+void fibonacci::input() {
+	cout<<"Enter the number of terms to be generated: ";
+	cin>>n;   
+}
+
+void fibonacci::output() {
+	int first=0,last=1,current,i; 
+	cout<<"\n"<<first<<" "<<last<<" ";
+	for(i=1;i<=n-2;i++) { 
+		current=first+last;  
+	    cout<<current<<" "; 
+		first=last; 
+		last=current; 
+	}
+}
+
+int main() {
+	fibonacci a;
+	a.input();
+	a.output();
+}
+
+
+//Write a C++ program to count the number of vowels in a given line of text.
+//Output the line of text and the number of vowels.
+
+#include<iostream>
+#include<string.h>
+using namespace std;
+
+class vowels {
+	string a;
+	public:
+		void input();
+		void output();
+};
+
+void vowels::input() {
+	cout<<"Enter the string: ";
+	getline(cin,a,'\n');
+}
+
+void vowels::output() {
+	int v=0;
+	cout<<"\nThe text is: ";
+	cout<<a;  
+	for(int i=0;i<a.length();i++) { 
+		if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'||a[i]=='A'||a[i]=='E'||a[i]=='I'||a[i]=='O'||a[i]=='U')
+			v++; 
+	}
+	
+	cout<<"\nNumber of vowels are: "<<v;
+	
+}
+
+int main() {
+	vowels a;
+	a.input();
+	a.output();
+}
+
+//Define  class NUMBER_LIST having the following specifications:
+//Private data members: num_list-an array of integers capable of storing maximum
+//10 integers.
+//Public member functions: read_list()-to read N(N<=10) numbers in the array num_list
+//calc_product()-to compute the product of the numbers in the array and display the
+//number and their product.
+
+#include<iostream>
+using namespace std;
+
+class NUMBER_LIST {
+	int num_list[10], n;
+	public:
+		void read_list();
+		void calc_product();
+};
+
+void NUMBER_LIST::read_list() {
+	cout<<"Enter the number of terms(max:10): ";
+	cin>>n; //n=5
+	cout<<"\nEnter the numbers: ";
+	for(int i=0;i<n;i++) { //i=5->[1 2 3 4 5]
+		cin>>num_list[i];  //num_list[4]
+	}
+}
+
+void NUMBER_LIST::calc_product() {
+	int prod=1; //[1 2 3 4 5]
+	for(int i=0;i<n;i++) { //i=5
+		prod=prod*num_list[i]; //prod=24*5=120
+	}
+	cout<<"\nThe numbers are: ";
+	for(int i=0;i<n;i++) {
+		cout<<num_list[i]<<" ";
+	}
+	cout<<"\nThe product of the numbers is: "<<prod;
+}
+
+int main() {
+	NUMBER_LIST a;
+	a.read_list();
+	a.calc_product();
+	NUMBER_LIST b;
+	b.read_list();
+	b.calc_product();
+}
+
+
+//Write a C++ program to create an array of maximum size 10 and storing integer 
+//values. Input N(N<=10) numbers into the array. Process the array to find and 
+//output the largest and the smallest numbers from the array as well as the values
+//in the array.
+
+#include<iostream>
+using namespace std;
+
+class gs {
+	int a[10],n;
+	public:
+		void input();
+		void output();
+};
+
+void gs::input() {
+	int i;
+	cout<<"Enter the number of elements: ";
+	cin>>n; //n=5
+	cout<<"\nEnter the elements: "; //[12 7 6 26 8]
+	for(i=0;i<n;i++) { //i=5
+		cin>>a[i]; //a[4]
+	}
+}
+
+void gs::output() { //a=[12 7 6 26 8] n=5
+	int s,g,i;  //
+	s=a[0]; //s=12; g=12
+	g=a[0];
+	for(i=1;i<n;i++) { //i=4
+		if(a[i]<s) { //a[4]<6
+			s=a[i]; //s=6
+		}
+		if(a[i]>g) { //a[4]>26
+			g=a[i]; //g=26
+		}
+	}
+	cout<<"\nThe numbers in the array are: ";
+	for(i=0;i<n;i++) {
+		cout<<a[i]<<" "; //12 7 6 26 8
+	}
+	cout<<"\nThe greatest number is "<<g<<" and the smallest number is "<<s;
+}
+
+int main() {
+	gs a;
+	a.input();
+	a.output();
+}
+
+
+//Write a C++ program to transpose a mxn matrix of integers where m!=n and output
+//the original matrix and it's transpose.
+
+#include<iostream>
+using namespace std;
+
+class transpose {
+	int m,n,a[20][20],b[20][20];
+	public:
+		void input();
+		void tp();
+		void output();
+};
+
+void transpose::input() {
+	int i,j;
+	cout<<"\nEnter the number of rows and columns respectively: ";
+	cin>>m>>n;
+	cout<<"\nEnter the elements of the array: ";
+	for(i=0;i<m;i++) {
+		for(j=0;j<n;j++) {
+			cin>>a[i][j];
+		}
+	}
+}
+
+void transpose::tp() {
+	int i,j;
+	for(i=0;i<m;i++) {
+		for(j=0;j<n;j++) {
+			b[j][i] = a[i][j];
+		}
+	}
+}
+
+void transpose::output() {
+	int i,j;
+	cout<<"\nThe original matrix is:\n";
+	for(i=0;i<m;i++) {
+		for(j=0;j<n;j++) {
+			cout<<a[i][j]<<" ";
+		}
+		cout<<"\n";
+	}
+	
+	cout<<"\nThe transposed matrix is:\n";
+	for(i=0;i<n;i++) {
+		for(j=0;j<m;j++) {
+			cout<<b[i][j]<<" ";
+		}
+		cout<<"\n";
+	}
+}
+
+int main() {
+	transpose t;
+	t.input();
+	t.tp();
+	t.output();
+}
+
+
+//Define a class with two private data members d1 and d2 of type double
+//and one private member function smaller() that returns the smaller of
+//the two values. Define two public member functions as follows:-
+//get_data(double,double) -> to assign values to data members.
+//put_data() -> to display the data values an the smaller of the two values
+//				by calling smaller.
+
+#include<iostream>
+using namespace std;
+
+class small
+{
+	double d1, d2;
+	double smaller();
+	
+	public:
+			void get_data(double, double);
+			void put_data();
+};
+
+void small::get_data(double a, double b)
+{
+	d1 = a;
+	d2 = b;
+}
+
+double small::smaller()
+{
+	if(d1 < d2)
+	{
+		return(d1);
+	}
+	else
+	{
+		return(d2);
+	}
+}
+
+void small::put_data()
+{
+	cout<<"The numbers are: "<<d1<<" and "<<d2<<"\n";
+	cout<<"The smaller of the two values is: "<<smaller();
+}
+
+int main()
+{
+	small x;
+	int a,b;
+	
+	cout<<"Enter the numbers: ";
+	cin>>a>>b;
+	
+	x.get_data(a,b);
+	x.put_data();
+	
+	return 0;
+}
+
+
+//Define a class BASE having one private data member num1 and one public
+//data member num2, both of type float. Define a public member function
+//input_data() -> to read data value num1.
+//get_num1() -> to return the value num1.
+//Extend class BASE to obtain another derived class DERIVED using public
+//derivation. Define for class DERIVED, a public data member sum which is
+//to be calculated by adding num1 and num2, and a public member function
+//get_data() -> to read num2 and to call input_data() for reading value and
+//				to compute sum.
+//show_data() -> to output num1, num2 and sum.
+//Write function main() to create object of the type DERIVED and input and
+//output all data.
+
+#include<iostream>
+using namespace std;
+
+class BASE
+{
+	float num1;
+	
+	public:
+			float num2;
+			void input_data();
+			float get_num1();
+};
+
+void BASE::input_data()
+{
+	cout<<"Enter the first number: ";
+	cin>>num1;
+}
+
+float BASE::get_num1()
+{
+	return(num1);
+}
+
+class DERIVED : public BASE
+{
+	float sum;
+	public:
+			void get_data();
+			void show_data();
+};
+
+void DERIVED::get_data()
+{
+	input_data();
+	cout<<"Enter the second number: ";
+	cin>>num2;
+	sum = get_num1() + num2;
+}
+
+void DERIVED::show_data()
+{
+	get_data();
+	cout<<"The first number is "<<get_num1()<<"\nThe second number is "<<num2<<"\nThe sum is "<<sum;
+}
+
+int main()
+{
+	DERIVED a;
+	a.show_data();
+}
+
+
+//Write a C++ program to create two text files names::COUNTRY and CAPITAL
+//which stores names of n countries and their corresponding capitals.
+//Then read the files to display the names of the countries and
+//their capitals in a neat tabular form.
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+int main()
+{
+	char country[20], capital[20];
+	int n;
+	ofstream a;
+	a.open("country.txt");
+	cout<<"Enter the number of countries: ";
+	cin>>n;
+	for(int i = 0; i < n; i++)
+	{
+		cout<<"\nEnter the name of the country "<<i + 1<<": ";
+		cin>>country;
+		a<<country<<endl;
+	}
+	a.close();
+	a.open("capital.txt");
+	for(int i = 0; i < n; i++)
+	{
+		cout<<"\nEnter the name and capital of country "<<i + 1<<": ";
+		cin>>capital;
+		a<<capital<<endl;
+	}
+	a.close();
+	ifstream b,c;
+	b.open("country.txt");
+	c.open("capital.txt");
+	cout<<"\nCountry\t\tCapital\n";
+	while(b)
+	{
+		b.getline(country, 20);
+		cout<<country<<"\t\t";
+		c.getline(capital, 20);
+		cout<<capital<<endl;
+	}
+	b.close();
+	c.close();
+	
+	return 0;
+}
