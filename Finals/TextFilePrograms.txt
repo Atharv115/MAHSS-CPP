@@ -1,0 +1,229 @@
+//Write a function main to open a file bill.txt and write the bill number and 
+//bill amount entered by the user to the file bill.txt. Also display the contents
+//of the file.
+#include<iostream>
+#include<fstream>
+using namespace std;
+class bill {
+	public:
+		int billno;
+		float billamt;
+};
+int main() {
+	bill a;
+	ifstream o;
+	ofstream p;
+	p.open("bill.txt");
+	if(!p) {
+		cout<<"Error";
+	}
+	else {
+		cout<<"Enter the bill number and bill amount: ";
+		cin>>a.billno>>a.billamt;
+		p<<a.billno;
+		p<<' ';
+		p<<a.billamt;
+	}
+	p.close();
+	o.open("bill.txt");
+	if(!o) {
+		cout<<"Error";
+	}
+	else {
+		o>>a.billno>>a.billamt;
+		cout<<a.billno<<"\t"<<a.billamt;
+	}
+	o.close();
+}
+
+
+//Write a function in C++ to count the words 'to' and 'the' present in the file
+//poem.txt
+#include<iostream>
+#include<fstream>
+#include<string.h>
+using namespace std;
+
+int main() {
+	ifstream a;
+	int c1=0,c2=0;
+	char ch[10];
+	a.open("poem.txt");
+	while(a) {
+		a>>ch;
+		if(strcmp(ch,"to")==0)
+			c1++;
+		if(strcmp(ch,"the")==0)
+			c2++;
+	}
+	a.close();
+	cout<<"Count of to: "<<c1<<"\nCount of the: "<<c2;
+}
+
+
+//To count and display the number of alphabets and number of spaces in an existing
+//file lines.txt
+#include<iostream>
+#include<fstream>
+#include<string.h>
+using namespace std;
+
+int main() {
+	ifstream a;
+	int c1=0,c2=0;
+	char ch;
+	a.open("line.txt");
+	while(a) {
+		a.get(ch);
+		if(ch>='A'&&ch<='Z'||ch>='a'&&ch<='z')
+			c1++;
+		if(ch==' ')
+			c2++;
+	}
+	a.close();
+	cout<<"Count of alphabets: "<<c1<<"\nCount of spaces: "<<c2;
+}
+
+
+//To open a file target.txt and copy the following text to the file. Text given:
+//Sheik Muskaan. Also open the file source.txt and copy its contents to target.txt
+//Display the contents of target.txt
+#include<iostream>
+#include<fstream>
+#include<string.h>
+using namespace std;
+void modify() {
+	char a[]="Sheik Muskaan",ch;
+	fstream b,c;
+	b.open("source.txt",ios::in);
+	c.open("target.txt",ios::out);
+	for(int i=0;i<strlen(a);i++) {
+		c.put(a[i]);
+	}
+	while(b) {
+		b.get(ch);
+		c.put(ch);
+	}
+	
+	b.close();
+	c.close();
+	
+	c.open("target.txt",ios::in);
+	while(c) {
+		c.get(ch);
+		cout<<ch;//Assuming that text1.txt already contains some text written to it, write a function
+//modify that reads the file text1.txt and creates a new file text2.txt which
+//should contain only those words from the file text1.txt which don't start
+//with an uppercase vowel
+#include<iostream>
+#include<fstream>
+#include<string.h>
+using namespace std;
+void modify() {
+	char ch;
+	string str;
+	fstream a,b;
+	a.open("text1.txt",ios::in);
+	b.open("text2.txt",ios::out);
+		while(a) {
+		a.get(ch);
+		str=str+ch;
+		
+		
+	} 
+	int i=0;
+	while(i<str.length()) {
+		if(str[i]==' ') {
+			b.put(str[i]);
+			i++;
+			if(str[i]=='A'||str[i+1]=='E'||str[i+1]=='I'||str[i+1]=='O'||str[i+1]=='U') {
+				while(str[i]!=' ') {
+					i++;
+				}
+			}
+			
+		}
+		else {
+			b.put(str[i]);
+			i++;
+		}
+	}
+	a.close();
+	b.close();
+}
+
+int main() {
+	modify();
+	
+}
+
+
+//Write a C++ program to create 2 text files named country.txt and capital.txt
+//to store names of n countries and their corresponding capitals, Read both the
+//files and display the names of the countries and their capitals
+#include<iostream>
+#include<fstream>
+#include<string.h>
+using namespace std;
+int main() {
+	fstream a,b,c,d;
+	int n;
+	char ctry[20],capt[20];
+	string ctr, cap;
+	a.open("country.txt",ios::out);
+	b.open("capital.txt",ios::out);
+	cout<<"Enter the number of counties: ";
+	cin>>n;
+	for(int i=0;i<n;i++) {
+		cout<<"\nCountry name: ";
+		cin>>ctr;
+		a<<ctr<<"\n";
+		cout<<"\nCapital name: ";
+		cin>>cap;
+		b<<cap<<"\n";
+		
+	}
+	a.close();
+	b.close();
+	c.open("country.txt",ios::in);
+	d.open("capital.txt",ios::in);
+	while(c) {
+		c.getline(ctry,20,'\n');
+		cout<<ctry<<"\t";
+		d.getline(capt,20,'\n');
+		cout<<capt<<"\n";
+	}
+	c.close();
+	d.close();
+}
+
+
+//Write a function count() and display total number of lines and number of lines
+//starting with alphabet 'A' present in an existing file lines.txt
+#include<iostream>
+#include<fstream>
+#include<string.h>
+using namespace std;
+int main() {
+	fstream a;
+	int n,count=0;
+	char ctry[20],capt[20];
+	a.open("country.txt",ios::in);
+	while(a) {
+		a.getline(ctry,20,'\n');
+		count++;
+		if(ctry[0]=='A')
+		cout<<ctry<<"\t";
+	}
+	cout<<"\nCount: "<<count;
+	a.close();
+}
+	}
+	c.close();
+}
+
+int main() {
+	modify();
+}
+
+

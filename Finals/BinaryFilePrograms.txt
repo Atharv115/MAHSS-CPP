@@ -1,0 +1,198 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+class inventory{
+	public:
+		
+	string name;
+	int code;
+	float cost;
+	
+	public:
+		void readdata();
+		void writedata();
+};
+
+void inventory::readdata() {
+	cin>>name;
+	cin>>code>>cost;
+	
+}
+
+void inventory::writedata() {
+	cout<<name<<" "<<code<<" "<<cost;
+}
+int main() {
+	inventory c;
+	inventory a;
+	fstream b;
+	b.open("stock.dat",ios::out|ios::in|ios::binary);
+	a.readdata();
+	b.write((char*)&a,sizeof(a));
+	b.read((char*)&c,sizeof(a));
+	cout<<c.code;
+	cout<<c.cost;
+	
+	b.close();
+}
+
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+class student{
+	int roll_no;
+	char name[100];
+	int marks[6];
+	public:
+		void input();
+		void show();
+};
+
+void student::input() {
+	cout<<"Enter the roll no: ";
+	cin>>roll_no;
+	cout<<"\nEnter name: ";
+	cin>>name;
+	cout<<"\nEnter marks in 6 subjects: ";
+	for(int i=0;i<6;i++) {
+		cin>>marks[i];
+	}
+	
+}
+
+void student::show() {
+	cout<<"\nRoll_no: "<<roll_no;
+	cout<<"\nName: "<<name;
+	cout<<"\nMarks: ";
+	for(int i=0;i<6;i++) {
+		cout<<marks[i]<<" ";
+	}
+}
+int main() {
+	student a[20];
+	student d[20];
+	fstream b,c;
+	int n;
+	b.open("records.dat",ios::out|ios::binary);
+	c.open("records.dat",ios::in|ios::binary);
+	cout<<"\nEnter the number of students: ";
+	cin>>n;
+	for(int i=0;i<n;i++) {
+		a[i].input();
+		b.write((char *)&a[i],sizeof(a[i]));
+	}
+	b.close();
+	
+	for(int i=0;i<n;i++) {
+		c.read((char*)&d[i],sizeof(d[i]));
+		d[i].show();
+	}
+	c.close();
+	
+}
+
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+class vehicle {
+	char vehicletype[10];
+	int no;
+	public:
+		void get_details();
+		void show_details();
+};
+
+void vehicle::get_details() {
+	cout<<"\nEnter the type: ";
+	cin>>vehicletype;
+	cout<<"\nEnter the number: ";
+	cin>>no;
+}
+
+void vehicle::show_details() {
+	cout<<"\nVehicle Type: "<<vehicletype;
+	cout<<"\nNumber: "<<no;
+}
+
+int main() {
+	vehicle v;
+	vehicle r[10];
+	ofstream b;
+	cout<<"\nEnter the number of records: ";
+	cin>>n;
+	b.open("lines.dat",ios::binary);
+	for(int i=0;i<n;i++) {
+		r[i].input();
+		b.write((char *)&r[i],sizeof(r[i]));
+	}
+	b.close();
+	ifstream a;
+	int c=0;
+	a.open("lines.dat",ios::binary);
+	while(a) {
+		a.read((char *)&v,sizeof(v));
+		c++;
+		v.show_details();
+	}
+	a.close();
+	cout<<"\nTotal number of records are: "<<c;
+}
+
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+class employee {
+	int code;
+	char name[10];
+	float salary;
+	public:
+		void input();
+		void show();
+		float return_salary();
+};
+
+void employee::input() {
+	cout<<"\nEnter the code: ";
+	cin>>code;
+	cout<<"\nEnter the name: ";
+	cin>>name;
+	cout<<"\nEnter the salary: ";
+	cin>>salary;
+}
+
+void vehicle::show() {
+	cout<<"\nCode: "<<code;
+	cout<<"\nName: "<<name;
+	cout<<"\nSalary: "<<salary;
+}
+
+int main() {
+	employee e;
+	vehicle e1[10];
+	ofstream b;
+	cout<<"\nEnter the number of records: ";
+	cin>>n;
+	b.open("company.dat",ios::binary);
+	for(int i=0;i<n;i++) {
+		e1[i].input();
+		b.write((char *)&e1[i],sizeof(e1[i]));
+	}
+	b.close();
+	fstream a,c;
+	a.open("company.dat",ios::in|ios::binary);
+	c.open("backup.dat",ios::out|ios::binary);
+	while(a) {
+		a.read((char *)&e,sizeof(e));
+		if(e.return_salary()>20000&&e.return_salary()<30000) {
+			e.show();
+			c.write((char *)&e,sizeof(e));
+		}
+	}
+	a.close();
+	c.close();
+}

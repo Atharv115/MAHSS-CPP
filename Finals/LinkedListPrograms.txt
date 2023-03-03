@@ -1,0 +1,293 @@
+//Creating a linked list and inserting elements into it
+#include<iostream>
+using namespace std;
+
+class list {
+    struct node {
+        int data;
+        node *link;
+    };
+    node *first, *temp, *last;
+    public:
+    void create();
+    void display();
+};
+
+void list::create() {
+    int n, i;
+    cout<<"\nEnter the number of nodes to be created: ";
+    cin>>n;
+    first = new node;
+    cout<<"\nEnter the data for the first node: ";
+    cin>>first->data;
+    first->link=NULL;
+    cout<<"done";
+    first->link=temp;
+    cout<<"done";
+    temp=first;
+    cout<<"done";
+    for(i=1;i<n;i++) {
+        last = new node;
+        cout<<"\nEnter the data for node "<<i+1;
+        cin>>last->data;
+        last->link=NULL;
+        temp->link=last;
+        temp=last;
+    }
+    display();
+}
+
+void list::display() {
+    cout<<"\nThe list contains: ";
+    for(temp=first;temp!=NULL;temp=temp->link)
+        cout<<temp->data;
+}
+
+int main() {
+    list l;
+    l.create();
+    l.display();
+}
+
+
+
+//To count the number of elements
+//To search for an element
+//To insert a node in the beginning
+//To insert a node at the end
+//To insert a node in a particular position 
+//To delete a node in a particular position
+#include<iostream>
+using namespace std;
+
+class list
+{
+    struct node
+	{
+        int data;
+        node *link;
+    };
+    node *first, *temp, *last;
+    public:
+    void count();
+    void search();
+    void inbeg();
+    void inlast();
+    void inpos();
+    void delpos();
+};
+
+void list::count()
+{
+	int c=0;
+	for(temp = first; temp != NULL; temp = temp -> link)
+	{
+		c += 1;
+	}
+	cout<<"\nThe number of elements are "<<c<<".\n";
+}
+
+void list::search()
+{
+	int k = 0,x;
+	if(first != NULL)
+	{
+		cout<<"\nEnter the number to be searched: ";
+		cin>>x;
+		for(temp = first; temp != NULL; temp = temp -> link)
+		{
+			if(temp -> data == x)
+			{
+				k=1;
+				cout<<"\nThe element is present.\n";
+				break;
+			}
+		}
+		if(k == 0)
+		{
+			cout<<"\nThe element is not present.\n";
+		}
+	}
+	else
+	{
+		cout<<"\nThe list is empty.\n";
+	}
+}
+
+void list::inbeg()
+{
+	node *a;
+	a = new node;
+	cout<<"\nEnter the number: ";
+	cin>>a -> data;
+	a -> link = first;
+	if(first == NULL)
+	{
+		last = a;
+	}
+	first = a;
+	cout<<"\nThe numbers are: ";
+	for(temp = first; temp != NULL; temp = temp -> link)
+	{
+		cout<<temp->data<<" ";
+	}
+	cout<<"\n";
+}
+
+void list::inlast()
+{
+	node *x;
+	x=new node;
+	cout<<"\nEnter the number: ";
+	cin>>x->data;
+	x->link=NULL;
+	if(first == NULL)
+	{
+		first = last = x;
+	}
+	else
+	{
+		last -> link = x;
+		last = x;
+	}
+	cout<<"\nThe numbers are: ";
+	for(temp = first; temp != NULL; temp = temp -> link)
+	{
+		cout<<temp -> data<<" ";
+	}
+	cout<<"\n";
+}
+
+void list::inpos()
+{
+	if(first == NULL)
+	{
+		inbeg();
+	}
+	else
+	{
+		int pos;
+		cout<<"\nEnter the position: ";
+		cin>>pos;
+		if(pos == 1)
+		{
+			inbeg();
+		}
+		else
+		{
+			node *x;
+			x = new node;
+			temp = first;
+			for(int i = 1; i < pos - 1; i++)
+			{
+				temp = temp -> link;
+			}
+			cout<<"\nEnter the number: ";
+			cin>>x->data;
+			x -> link = temp -> link;
+					temp -> link = x;
+			cout<<"\nThe numbers are: ";
+			for(temp = first; temp != NULL; temp = temp -> link)
+			{
+				cout<<temp -> data<<" ";
+			}
+			cout<<"\n";
+		}
+	}
+}
+
+void list::delpos()
+{
+	if(first == NULL)
+	{
+		cout<<"\nThe list is empty.\n";
+	}
+	else
+	{
+		temp = first;
+		if(first == last)
+		{
+			first = last = NULL;
+			cout<<"\nThe list is empty.\n";
+		}
+		else
+		{
+			int pos;
+			node *temp2;
+			cout<<"\nEnter the position: ";
+			cin>>pos;
+			for(int i = 1; i < pos; i++)
+			{
+				temp = temp -> link;
+			}
+			if(temp == first)
+			{
+				first = first -> link;
+			}
+			else
+			{
+				for(temp2 = first; temp2 -> link != temp; temp2 = temp2 -> link);
+				temp2 -> link = temp -> link;
+				if(temp2 -> link == NULL)
+				{
+					last = temp2;
+				}
+			}
+			cout<<"\nThe numbers are: ";
+			for(temp2 = first; temp2 != NULL; temp2 = temp2 -> link)
+			{
+				cout<<temp2 -> data<<" ";
+			}
+		cout<<"\n";
+		}
+		temp -> link = NULL;
+		delete temp;
+	}
+	
+}
+	
+int main()
+{
+	list l;
+	int choice;
+	do
+	{
+		cout<<"\nEnter your choice";
+		cout<<"\n1:Count\n2:Search\n3:Insert in the beginning\n4:Insert at the end\n5:Insert in a particular position\n6:Delete a position\n7:Exit\n\n";
+		cin>>choice;
+		switch(choice)
+		{
+			case 1:
+				l.count();
+				break;
+			case 2:
+				l.search();
+				break;
+			case 3:
+				l.inbeg();
+				break;
+			case 4:
+				l.inlast();
+				break;
+			case 5:
+				l.inpos();
+				break;
+			case 6:
+				l.delpos();
+				break;
+			case 7:
+				break;
+			default:
+				cout<<"\nWrong choice!";
+				break;
+		}
+	}while(choice != 7);
+}
+
+
+
+
+//Stack(Refer to practical long programs)
+
+
+///Queue(Refer to practical long programs)

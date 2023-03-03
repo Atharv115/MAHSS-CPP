@@ -1,0 +1,161 @@
+//To find the frequency of a character in a string
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main() {
+	string str;
+	char ch;
+	cout<<"Enter the string: ";
+	cin>>str;
+	cout<<str;
+	cout<<"\nEnter the character: ";
+	cin>>ch;
+	int c=0;
+	for(int i=0;i<=str.size();i++) {
+		if(str[i]=='ch') {
+			c++;
+		}
+	}
+	
+	cout<<"The frequency of "<<ch<<"is "<<c;
+}
+
+
+//To accept a string from the user and count the number of vowels, words and consonants
+//Assume that string consists only of spaces and alphabets
+#include<iostream>
+using namespace std;
+int main() {
+	int no_of_words=0,no_of_vowels=0,cons=0;
+	string text;
+	cout<<"Enter  the string: ";
+	getline(cin,text);
+	for(int i=0;i<text.size();i++) {
+		if(text[i]==' ')
+		{
+			no_of_words++;
+		}
+		if((text[i]=='a')||(text[i]=='e')||(text[i]=='i')||(text[i]=='o')||(text[i]=='u'))
+		{
+			no_of_vowels++;
+		}
+	}
+	cons=(text.size())-no_of_vowels-no_of_words;
+	cout<<"\nThe number of words are "<<no_of_words+1;
+	cout<<"\nThe number of vowels are "<<no_of_vowels;
+	cout<<"\nThe number of consonants are "<<cons;
+}
+
+
+//To join two strings without usinga third string
+//To reverse a string without using standard functions
+//To copy a string from one string to another without using a standard function
+#include<iostream>
+using namespace std;
+int main() {
+	string text,text2;
+	char merge[50],copy[50];
+	cout<<"Enter  the string: ";
+	getline(cin,text);
+	cout<<"\nEnter the second string: ";
+	getline(cin,text2);
+	cout<<"\ntext: "<<text;
+	cout<<"\ntext2: "<<text2;
+	for(int i=0;i<text.size();i++) {
+		merge[i]=text[i];
+	}
+	int k=0;
+	for(int i=text.size();i<(text.size()+text2.size());i++) {
+		merge[i]=text2[k];
+		k++;
+	}
+	
+	cout<<"\n1.Merged string: "<<merge;
+	
+	for(int i=0;i<(text.size()/2);i++) {
+		char c = text[i];
+		text[i]=text[text.size()-1-i];
+		text[text.size()-1-i]=c;
+	}
+	
+	cout<<"\n2.Reversed text: "<<text;
+	
+	
+	for(int i=0;i<(text2.size());i++) {
+		copy[i]=text2[i];
+	}
+	
+	cout<<"\n3.Copied string: "<<copy;
+}
+
+
+
+//To remove extra spaces from a string
+#include<iostream>
+using namespace std;
+int main() {
+	string text;
+	char processed_text[50];
+	cout<<"Enter  the string: ";
+	getline(cin,text);
+	int k=0;
+	for(int i=0;i<text.size();i++) {
+		if(text[i]==' '&&text[i+1]==' ') {
+			continue;
+		}
+		else {
+			processed_text[k]=text[i];
+			k++;
+	}
+	}
+	
+	cout<<"\nOutput string: "<<processed_text;
+}
+
+
+//To compare two strings and check if they are equal
+#include<iostream>
+using namespace std;
+int main() {
+	string text1,text2;
+	int check;
+	cout<<"Enter  the string: ";
+	getline(cin,text1);
+	cout<<"\nEnter  the second string: ";
+	getline(cin,text2);
+	
+	if((text1.size())!=(text2.size())) {
+		cout<<"\nThe strings are not equal.";
+	}
+	for(int i=0;i<text1.size();i++) {
+		if(text1[i]!=text2[i]) {
+			check=1;
+			break;
+		}
+	}
+	
+	if(check==1) {
+		cout<<"The strings do not match.\n";
+	}
+	
+	else {
+		cout<<"The strings are equal.";
+	}
+}
+
+
+//To convert from lower case to uppercase
+#include<iostream>
+using namespace std;
+int main() {
+	string text;
+	cout<<"Enter  the string: ";
+	getline(cin,text);
+	for(int i=0;i<text.size();i++) {
+		if((text[i]>=97)&&(text[i]<=122)) {
+			text[i]=text[i]-32;
+		}
+	}
+	
+	cout<<"\nOutput string: "<<text;
+}

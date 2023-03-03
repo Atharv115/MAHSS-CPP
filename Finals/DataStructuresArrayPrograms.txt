@@ -1,0 +1,513 @@
+//Examples of 1D arrays-Linear search
+#include<iostream>
+using namespace std;
+
+int main() {
+	int a[20], n, x, i, c=0;
+	cout<<"Enter the size of the array\n";
+	cin>>n; 
+	cout<<"Enter the elements\n";
+	for(i=0;i<n;i++) { 
+		cin>>a[i];	
+	}
+	cout<<"The elements of the array are: ";
+	for(i=0;i<n;i++) {
+		cout<<a[i]<<"\t";
+	}
+	cout<<"\nEnter the element to be searched: ";
+	cin>>x; 
+	for(i=0;i<n;i++) {
+		if(x==a[i]) {
+			cout<<"\nThe element is present at "<<i+1;
+			c=1;
+			break;
+		}
+	}
+	if(c==0) {
+		cout<<"\nThe element is not present.";
+	}
+}
+
+
+//Binary Search(Refer to long practical programs)
+
+
+
+//Write a C++ program to perform insertion and deletion of a number in the array
+//depending on the user's choice
+
+#include<iostream>
+using namespace std;
+
+int main() {
+	int arr[20], n, x, pos, c;
+	cout<<"Enter the size of the array: ";
+	cin>>n;
+	cout<<"\nEnter the elements of the array: ";
+	for(int i=0;i<n;i++) {
+		cin>>a[i];
+	}
+	do {
+	cout<<"\nEnter your choice\n1-Insertion\n2-Deletion\n3-Exit";
+	cin>>c;
+	switch(c) {
+		case 1: cout<<"\nEnter the element to be inserted and it's position': ";
+				cin>>x>>pos;
+				pos=pos-1;
+				for(i=n;i>=pos;i--) {
+					a[i]=a[i-1];
+				}
+				a[pos]=x;
+				n=n+1;
+				cout<<"\nThe new array is: ";
+				for(i=0;i<n;i++) {
+					cout<<a[i]<<" ";
+				}
+				break;
+		case 2: cout<<"\nEnter the position to be deleted: ";
+				cin>>pos;
+				pos=pos-1;
+				for(i=pos;i<n;i++) {
+					a[i-1]=a[i];
+				}
+				n=n-1;
+				cout<<"\nThe new array is: ";
+				for(i=0;i<n;i++) {
+					cout<<a[i];
+				}
+				break;
+		case 3: break;
+		default:break;
+	}
+}while(c!=3);
+}
+
+
+
+//Bubble Sort(Refer to long practical programs)
+
+
+//Selection Sort(Refer to long practical programs)
+
+
+//Insertion Sort(Refer to long practical programs)
+
+
+//Write a C++ program to perform insertion in a sorted array
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    int a[20],n,x,pos;
+    cout<<"Enter the number of elements in the array: ";
+    cin>>n;
+    cout<<"\nEnter the elements of the array in ascending order: ";
+    for(int i=0;i<n;i++) {
+        cin>>a[i];
+    }
+    
+    cout<<"\nEnter the number to be inserted: ";
+    cin>>x;
+    
+    for(int i=0;i<n;i++) {
+        if(x<a[i]) {
+            pos=i;
+            break;
+        }
+    }
+    
+    for(int i=n;i>pos;i--) {
+        a[i]=a[i-1];
+    }
+    a[pos]=x;
+    n=n+1;
+    
+    cout<<"\nThe new array is: ";
+    for(int i=0;i<n;i++) {
+       cout<<a[i]<<" ";
+    }
+
+    return 0;
+}
+
+
+//Write a C++ program to convert from decimal to binary number using arrays
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, a[20], i=0, d, k;
+    cout<<"Enter the decimal number: ";
+    cin>>n;
+    while(n>0) {
+        d=n%2;
+        a[i]=d;
+        n=n/2;
+        i++;
+    }
+    cout<<"\nThe binary number is: ";
+    for(k=i-1;k>=0;k--) {
+        cout<<a[k];
+    }
+    return 0;
+}
+
+
+
+//Write a C++ program to convert from octal to binary number using arrays
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+    int n, a[20], i=0, d, k=0, sum=0;
+    cout<<"Enter the octal number: ";
+    cin>>n;
+    
+    while(n>0) {
+        d=n%10;
+        sum=sum+d*pow(8,i);
+        i++;
+        n=n/10;
+    }
+    cout<<"\nThe intermediate decimal value is "<<sum;
+    while(sum>0) {
+        d=sum%2;
+        a[k]=d;
+        sum=sum/2;
+        k++;
+    }
+    cout<<"\nThe binary number is: ";
+    for(int j=k-1;j>=0;j--) {
+        cout<<a[j];
+    }
+    return 0;
+}
+
+
+
+//Write a C++ program 
+//1-To find the largest element
+//2-To find the smallest element
+//3-To find the sum of odd elements
+//4-To find the product of even elements
+//5-To find the average of all elements
+
+#include<iostream>
+using namespace std;
+int main() {
+	int a[20],n,large,small,prod,sum;
+	float sum1=0,avg;
+	int choice;
+	cout<<"Enter the size of the array: ";
+	cin>>n;
+	cout<<"\nEnter the elements of the array: ";
+	for(int i=0;i<n;i++) {
+		cin>>a[i];
+	}
+	cout<<"\nThe array: ";
+	for(int i=0;i<n;i++) {
+		cout<<a[i]<<"\t";
+	}
+	do {
+		cout<<"\nSelect an option\n1-Largest\n2-Smallest\n3-Sum of odd\n4-Product of even\n5-Average\n6-Exit\n";
+		cin>>choice;
+		switch(choice) {
+			case 1: 
+					large=a[0];
+					for(int j=1;j<n;j++) {
+						if(a[j]>large) {
+							large=a[j];
+						}
+					}
+					cout<<large;
+					break;
+			case 2: 
+					small=a[0];
+					for(int k=1;k<n;k++) {
+						if(a[k]<small) {
+							small=a[k];
+						}
+					}
+					cout<<small;
+					break;
+			case 3: sum = 0;
+					for(int l=0;l<n;l++) {
+						if(a[l]%2!=0) {
+							sum=sum+a[l];
+						}
+					}
+					cout<<sum;
+					break;
+			case 4: prod = 1;
+					for(int m=0;m<n;m++) {
+						if(a[m]%2==0) {
+							prod=prod*a[m];
+						}
+					}
+					cout<<prod;
+					break;
+			case 5:
+					for(int o=0;o<n;o++) {
+							sum1=sum1+a[o];
+					}
+					avg=sum1/n;
+					cout<<avg;
+					break;
+			case 6: break;
+			default: cout<<"\nWrong choice";
+					 break;
+		}
+	} while(choice!=6);
+}
+
+
+//Divide every odd element by 5 and every even element by 2
+
+#include<iostream>
+using namespace std;
+int main() {
+	int a[20],n;
+	cout<<"Enter the size of the array: ";
+	cin>>n;
+	cout<<"\nEnter the elements of the array: ";
+	for(int i=0;i<n;i++) {
+		cin>>a[i];
+	}
+	cout<<"\nThe array: ";
+	for(int i=0;i<n;i++) {
+		cout<<a[i]<<"\t";
+	}
+	
+	for(int i=0;i<n;i++) {
+		if(a[i]%2==0) {
+			a[i]=a[i]/2;
+		}
+		else {
+			a[i]=a[i]/5;
+		}
+	}
+	
+	cout<<"\nThe array after processing: ";
+	for(int i=0;i<n;i++) {
+		cout<<a[i]<<"\t";
+	}
+}
+
+
+//second largest without sorting
+
+#include<iostream> 
+using namespace std;
+int main() {
+	int a[20],n,large,pos,second;
+	cout<<"Enter the size of the array: ";
+	cin>>n;
+	cout<<"\nEnter the elements of the array: ";
+	for(int i=0;i<n;i++) {
+		cin>>a[i];
+	}
+	cout<<"\nThe array: ";
+	for(int i=0;i<n;i++) {
+		cout<<a[i]<<"\t";
+	}
+	large=a[0];
+	for(int j=1;j<n;j++) {
+		if(a[j]>large) {
+			large=a[j];
+			pos=j;
+		}
+	}
+	if(large==a[0]) {
+		second=a[1];
+	}
+	else {
+		second = a[0];
+	}
+	
+	for(int j=1;j<n;j++) {
+		if(second<a[j] && a[j]<large) {
+			second=a[j];
+			
+		}
+	}
+	cout<<"\nSecond largest element="<<second;
+	
+}
+
+
+//merging 2 arrays
+#include<iostream> 
+using namespace std;
+int main() {
+	int a[20],n1,b[20],n2,c[40];
+	cout<<"Enter the size of the array: ";
+	cin>>n1;
+	cout<<"\nEnter the elements of the array: ";
+	for(int i=0;i<n1;i++) {
+		cin>>a[i];
+	}
+	cout<<"\nThe array: ";
+	for(int i=0;i<n1;i++) {
+		cout<<a[i]<<"\t";
+	}
+	
+	cout<<"Enter the size of the second array: ";
+	cin>>n2;
+	cout<<"\nEnter the elements of the array: ";
+	for(int i=0;i<n2;i++) {
+		cin>>b[i];
+	}
+	cout<<"\nThe second array: ";
+	for(int i=0;i<n2;i++) {
+		cout<<b[i]<<"\t";
+	}
+	
+	for(int i=0;i<n1;i++) {
+		c[i]=a[i];
+	}
+	int k=0;
+	for(int i=n1;i<n1+n2;i++) {
+		c[i]=b[k];
+		k++;
+	}
+	
+	cout<<"\nThe merged array: ";
+	for(int i=0;i<n1+n2;i++) {
+		cout<<c[i]<<"\t";
+	}
+	
+}
+
+
+//exchange first half values with second half(always even)
+
+#include<iostream>
+using namespace std;
+int main() {
+	int a[20],n;
+	cout<<"Enter the size of the array(even): ";
+	cin>>n;
+	cout<<"\nEnter the elements of the array: ";
+	for(int i=0;i<n;i++) {
+		cin>>a[i];
+	}
+	cout<<"\nThe array: ";
+	for(int i=0;i<n;i++) {
+		cout<<a[i]<<"\t";
+	}
+	
+	for(int i=0;i<n/2;i++) {
+		int t=a[n/2+i];
+		a[n/2+i] = a[i];
+		a[i] = t;
+	}
+	
+	cout<<"\nThe array after exchanging: ";
+	for(int i=0;i<n;i++) {
+		cout<<a[i]<<"\t";
+	}
+}
+
+
+//reverse the array
+#include<iostream>
+using namespace std;
+int main() {
+	int a[20],n;
+	cout<<"Enter the size of the array: ";
+	cin>>n;
+	cout<<"\nEnter the elements of the array: ";
+	for(int i=0;i<n;i++) {
+		cin>>a[i];
+	}
+	cout<<"\nThe array: ";
+	for(int i=0;i<n;i++) {
+		cout<<a[i]<<"\t";
+	}
+	int k=n-1;
+	for(int i=0;i<n/2;i++) {
+		int t=a[i];
+		a[i] = a[k];
+		a[k] = t;
+		k--;
+	}
+	
+	cout<<"\nThe array after reversal: ";
+	for(int i=0;i<n;i++) {
+		cout<<a[i]<<"\t";
+	}
+}
+
+
+//swapping every even location with the next odd location
+#include<iostream>
+using namespace std;
+int main() {
+	int a[20],n;
+	cout<<"Enter the size of the array: ";
+	cin>>n;
+	cout<<"\nEnter the elements of the array: ";
+	for(int i=0;i<n;i++) {
+		cin>>a[i];
+	}
+	cout<<"\nThe array: ";
+	for(int i=0;i<n;i++) {
+		cout<<a[i]<<"\t";
+	}
+	
+	for(int i=0;i<n-1;i++) {
+		if(i%2==0) {
+			int t=a[i];
+			a[i]=a[i+1];
+			a[i+1]=t;
+		}
+	}
+	
+	cout<<"\nThe array after swapping: ";
+	for(int i=0;i<n;i++) {
+		cout<<a[i]<<"\t";
+	}
+}
+
+
+//To transfer the contents from 2 arrays, first[], second[] to array all[] such that the even places of array
+//all[] get the contents from the first array and the odd places of array all[] get the contents from the
+//second[] array. (Both the arrays should be of the same size)
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int first[10], second[10], all[20], n, j=0, k=0;
+    cout<<"Enter the size of the arrays: ";
+    cin>>n;
+    
+    cout<<"\nEnter the elements of the first array: ";
+    for(int i=0;i<n;i++) {
+        cin>>first[i];
+    }
+    
+    cout<<"\nEnter the elements of the second array: ";
+     for(int i=0;i<n;i++) {
+        cin>>second[i];
+    }
+    
+    for(int i=0;i<2*n;i++) {
+        if(i%2==0) {
+            all[i] = first[j];
+            j++;
+        }
+        else {
+            all[i] = second[k];
+            k++;
+        }
+    }
+    
+    cout<<"\nThe merged array is: ";
+    for(int i=0;i<2*n;i++) {
+        cout<<all[i]<<" ";
+    }
+}
+
